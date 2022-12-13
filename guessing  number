@@ -1,0 +1,30 @@
+import java.util.*;
+class project {
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        double n2=Math.random()*100;
+        int n1=(int)n2;
+        int curr=0;
+        while(true)
+        {
+           System.out.println("Guess your number");
+           int number=sc.nextInt();
+           
+           if(number==n1)
+           {
+               System.out.println("Congratulations!Got the number");
+               break;
+           }
+           else if(number>n1)
+           {
+               System.out.println("Large Number!Enter Smallest no from"+number);
+           }
+           else
+           {
+               System.out.println("Smallest number Largest no from"+number  );
+           }
+        }
+        
+    }
+}
