@@ -6,7 +6,10 @@ class project {
         double n2=Math.random()*100;
         int n1=(int)n2;
         int curr=0;
-        while(true)
+        System.out.println("WelCome\n You Have Only 10 chance to Guess the right number:\nIf you guess in 5 chance you get champion"+
+          "\nIf you guess in 7 chance you will get Silver position\nIf you will get in 10 chance Best of Luck for next!");
+        int count=0;
+        while(count<10)
         {
            System.out.println("Guess your number");
            int number=sc.nextInt();
@@ -24,6 +27,19 @@ class project {
            {
                System.out.println("Smallest number Largest no from"+number  );
            }
+           count--;
+        }
+        if(count<6)
+        {
+          System.out.println("Champion!");
+        }
+        else if(count<8)
+        {
+          System.out.println("Silver!");
+        }
+        else
+        {
+          System.out.println("Best of Luck for next!");
         }
         
     }
